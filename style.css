@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+body{
+    background-color: #fef9f8;
+    color: #0d0d0d;
+}
+
+header{
+    background-color: whitesmoke;
+}
+
+main {
+    width:80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 7em;
+}
+
+
+/* nav bar */
+
+nav {
+    background-color: white;
+    
+    
+}
+
+.navigation{
+    display:flex;
+    justify-content: center;
+    
+    
+}
+
+nav li {
+    list-style: none;
+    padding: 1em 3em ;
+    font-size: 1.3em;
+}
+
