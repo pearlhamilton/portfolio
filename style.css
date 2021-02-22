@@ -6,3 +6,10 @@ body{
 header{
     background-color: whitesmoke;
 }
+
+main {
+    width:80%;
+    text-align: center;
+    
+    margin: 0 auto;
+}
