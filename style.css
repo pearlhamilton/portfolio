@@ -6,6 +6,7 @@
 body{
     background-color: #fef9f8;
     color: #0d0d0d;
+    font-family: futura-pt, sans-serif;
 }
 
 
@@ -32,7 +33,7 @@ p {
 /* nav bar */
 
 nav {
-   
+   height:10vh;
     
     
 }
@@ -46,7 +47,27 @@ nav {
 
 nav li {
     list-style: none;
-    padding: 1em 3em ;
     font-size: 1.3em;
+    padding: 2rem;
+    
 }
 
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  
+  
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+#logo{
+    padding: 2rem;
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+}
