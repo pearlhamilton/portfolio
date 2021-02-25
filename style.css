@@ -2,6 +2,7 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -68,25 +69,28 @@ nav li {
     padding: 2rem 0;
     font-family: futura-pt, sans-serif;
     font-weight: 300;
+    font-size:1.5rem;
 }
 
 
-/* hero */
+/* /* hero */
 
 #hero {
-    
+height:100vh;
 }
  
 
 h1{
-    font-size: 13em;
-    height:70%;
+    font-size:11rem;
+    
 
     
 }
 
-p {height:20%;
-font-size:4em;
+/*
+
+p {
+font-size:5rem;
 font-weight: 300;}
 
 
@@ -96,19 +100,43 @@ font-weight: 300;}
 }
 
 .hero-h1-container{
-    height:70%;
-    align-items: center;
+    height:60%;
+    
 
 }
 
 .hero-para-container {
     height:20%;
     justify-content: flex-end;
-    margin-top:20px;
+    align-items:flex-start;
+    
     
 }
 
 #scrolldown{
  text-align: center;
- margin-top: 100px;
+ height:20%;
+ 
+ 
 }
+
+
+
+
+h2{
+    text-align:center;
+    font-size: 7rem;
+}
+
+/* projects */
+
+/* .project-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.grid-item {
+    height: 250px;
+    width: 250px;
+    text-align: center; */ */
