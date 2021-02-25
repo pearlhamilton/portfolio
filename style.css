@@ -1,38 +1,39 @@
 *{
     padding:0;
     margin: 0;
+    box-sizing: border-box;
+
 }
+
+body, html{
+    overflow-x: hidden;
+}
+
 
 body{
     background-color: #fef9f8;
     color: #0d0d0d;
+    font-family: futura-pt, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+
+
 }
 
 
 
-main {
-    width:80%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-h1{
-    font-size: 9em;
-    margin-left: 1.3em;
-    margin-top: 0.8em;
-}
 
 p {
     font-size: 2.5em;
-    float: right;
-    margin-right: 5.5em;
+    
+  
 }
 
 
 /* nav bar */
 
 nav {
-   
+   height:10vh;
     
     
 }
@@ -46,7 +47,140 @@ nav {
 
 nav li {
     list-style: none;
-    padding: 1em 3em ;
     font-size: 1.3em;
+    
+    margin: 2rem 0;
+    padding: 0 2rem;
+    
 }
 
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  
+  
+}
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+#logo{
+    padding: 2rem 0;
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-size:1.5rem;
+}
+
+
+/* /* hero */
+
+.hero {
+height:90vh;
+margin-bottom: 0;
+display:flex;
+flex-direction: column;
+justify-content:center;
+
+
+
+
+
+
+
+
+}
+ 
+
+h1{
+    font-size: 10rem;
+    
+
+    
+}
+
+#intro-line{
+    margin-bottom: 100px;
+    
+}
+
+
+
+
+
+
+
+
+h2{
+    text-align:center;
+    font-size: 8rem;
+}
+
+/* projects */
+
+ .project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.grid-item {
+    height: 250px;
+    width: 250px;
+    text-align: center; 
+    border:#ebcdc7  solid 5px;
+}
+
+
+
+
+
+div#scrolldown{
+ text-align: right;
+    
+    
+   }
+
+
+
+   @media only screen and (max-width: 843px){
+       
+h1, h2{
+    font-size: 15vw;
+    
+
+   }
+
+p{
+    font-size: 7vw;;
+}
+
+}
+
+@media only screen and (max-width: 700px){
+       
+.hero{
+
+    
+
+    justify-content: center;
+    
+
+}
+
+
+
+
+#intro-line{
+    margin-bottom: 0px;
+    
+    
+}
+    }
+    
+    
