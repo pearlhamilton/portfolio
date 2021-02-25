@@ -75,13 +75,21 @@ nav li {
 
 /* /* hero */
 
-#hero {
+.hero {
 height:100vh;
+margin-bottom: 0;
+display: flex;
+flex-direction: column;
+
+margin-top: 40px;
+
+
+
 }
  
 
 h1{
-    font-size:11rem;
+    font-size:13rem;
     
 
     
@@ -113,12 +121,7 @@ font-weight: 300;}
     
 }
 
-#scrolldown{
- text-align: center;
- height:20%;
- 
- 
-}
+
 
 
 
@@ -130,7 +133,7 @@ h2{
 
 /* projects */
 
-/* .project-grid{
+ .project-grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
@@ -139,4 +142,15 @@ h2{
 .grid-item {
     height: 250px;
     width: 250px;
-    text-align: center; */ */
+    text-align: center; 
+}
+
+
+
+
+
+div#scrolldown{
+ text-align: center;
+    
+    
+   }
