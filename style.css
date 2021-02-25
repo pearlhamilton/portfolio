@@ -14,11 +14,6 @@ body{
 
 
 
-main {
-   
-}
-
-
 
 p {
     font-size: 2.5em;
@@ -95,31 +90,6 @@ h1{
     
 }
 
-/*
-
-p {
-font-size:5rem;
-font-weight: 300;}
-
-
-
-.flex{
-    display:flex;
-}
-
-.hero-h1-container{
-    height:60%;
-    
-
-}
-
-.hero-para-container {
-    height:20%;
-    justify-content: flex-end;
-    align-items:flex-start;
-    
-    
-}
 
 
 
