@@ -5,11 +5,19 @@
 
 }
 
+body, html{
+    overflow-x: hidden;
+}
+
 
 body{
     background-color: #fef9f8;
     color: #0d0d0d;
     font-family: futura-pt, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+
+
 }
 
 
@@ -71,12 +79,16 @@ nav li {
 /* /* hero */
 
 .hero {
-height:100vh;
+height:90vh;
 margin-bottom: 0;
-display: flex;
+display:flex;
 flex-direction: column;
+justify-content:center;
 
-margin-top: 40px;
+
+
+
+
 
 
 
@@ -84,11 +96,17 @@ margin-top: 40px;
  
 
 h1{
-    font-size:13rem;
+    font-size: 10rem;
     
 
     
 }
+
+#intro-line{
+    margin-bottom: 100px;
+    
+}
+
 
 
 
@@ -98,21 +116,24 @@ h1{
 
 h2{
     text-align:center;
-    font-size: 7rem;
+    font-size: 8rem;
 }
 
 /* projects */
 
  .project-grid{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
+    row-gap: 20px;
+    column-gap: 10px;
 }
 
 .grid-item {
     height: 250px;
     width: 250px;
     text-align: center; 
+    border:#ebcdc7  solid 5px;
 }
 
 
@@ -120,7 +141,46 @@ h2{
 
 
 div#scrolldown{
- text-align: center;
+ text-align: right;
     
     
    }
+
+
+
+   @media only screen and (max-width: 843px){
+       
+h1, h2{
+    font-size: 15vw;
+    
+
+   }
+
+p{
+    font-size: 7vw;;
+}
+
+}
+
+@media only screen and (max-width: 700px){
+       
+.hero{
+
+    
+
+    justify-content: center;
+    
+
+}
+
+
+
+
+#intro-line{
+    margin-bottom: 0px;
+    
+    
+}
+    }
+    
+    
