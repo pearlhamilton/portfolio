@@ -58,7 +58,7 @@ section#home{
 
 
 section#projects{
-    height:200vh;
+    height:auto;
 }
 /* nav bar */
 
@@ -66,7 +66,7 @@ section#projects{
 nav {
    height:10vh;
    width: 100%;
-   position: absolute;
+   position: fixed;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
