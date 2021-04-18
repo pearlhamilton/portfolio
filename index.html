@@ -35,13 +35,12 @@
                 </div>
         </nav>
 
-        <div id="sociallinks">
+  <div id="sociallinks">
             <a><img src="./images/github.png" alt="github icon"></a>
             <a><img src="./images/linkedin-logo.png" alt="github icon"></a>
             <a><img src="./images/email.png" alt="github icon"></a>
         </div>
-
-
+      
 
             
         <section id="home">
@@ -71,8 +70,10 @@
 
 
 
+
             <section id="about">
-                <h2>I like cats</h2>
+                <div id="about-me">Hi</div>
+                <div id="about-me-2">Place holder</div>
               
 
             </section>
@@ -83,7 +84,7 @@
                 <div id="skill-cards">
 
 
-                    <div class="card">    
+                    <div class="card" data-aos="fade-right">    
                         <div class="icon">      
                             <i class="fab fa-html5"></i>
                             <i class="fab fa-css3-alt"></i>
@@ -91,28 +92,28 @@
                         <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt.</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <div class="icon">           
                             <i class="fab fa-js-square"></i>
                         </div>      
                         <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt.</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-right" >
                         <div class="icon">           
                             <i class="fab fa-node"></i>
                         </div>      
                         <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt.</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card"data-aos="fade-right" >
                         <div class="icon">           
                             <i class="fab fa-react"></i>
                         </div>
                         <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt.</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <div class="icon">           
                             <i class="fas fa-database"></i>
                         </div>
@@ -121,21 +122,21 @@
                         </p>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <div class="icon">           
                             <i class="fab fa-docker"></i>
                         </div>
                         <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt. </p>
                     </div>
 
-                    <div class="card">
+                    <div class="card"data-aos="fade-right">
                         <div class="icon">           
                             <i class="fab fa-python"></i>
                         </div>
                         <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt.</p>
                     </div>
 
-                    <div class="card">
+                    <div class="card"data-aos="fade-right">
                         <div class="icon">
                             <i class="fas fa-bug"></i>
                         </div>
@@ -150,42 +151,45 @@
 
             <section id="projects">
                 <h2>Projects</h2>
-
+            
+            
                 <div class="project-card" data-aos="fade-right">
-                    <img src="./images/github.png" alt="">
+                    <img src="https://i.stack.imgur.com/y9DpT.jpg" alt="">
                     <div>
-                        <p>Description</p>
+                        <p>Console.log</p>
                         <i></i>
                     </div>
                 </div>
 
                 <div class="project-card" data-aos="fade-left">
-                    <img src="./images/github.png" alt="">
+                    <img src="https://i.stack.imgur.com/y9DpT.jpg" alt="">
                     <div>
-                        <p>Description</p>
+                        <p>Drink.Sleep.Code.Repeat</p>
                         <i></i>
                     </div>
                 </div>
 
+                <div class="project-card" data-aos="fade-right">
+                    <img src="https://i.stack.imgur.com/y9DpT.jpg" alt="">
+                    <div>
+                        <p></p>
+                        <i></i>
+                    </div>
+                </div>
 
-
-                <!-- <div class="project-grid">
-                    <div data-aos="fade-up" class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                   
-                   
-                </div> -->
+                <div class="project-card" data-aos="fade-left">
+                    <img src="https://i.stack.imgur.com/y9DpT.jpg" alt="">
+                    <div>
+                        <p></p>
+                        <i></i>
+                    </div>
+                </div>
+               
 
 
             </section>
 
-        
-
-
+    
         
         
 
@@ -194,8 +198,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-          duration:1000
+          duration:1000,
+          offset: 300
       });
-    </script>
+    </script> 
 </body>
 </html>
