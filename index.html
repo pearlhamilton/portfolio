@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
     <script src="https://kit.fontawesome.com/68fd087352.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 <body>
@@ -148,16 +150,35 @@
 
             <section id="projects">
                 <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                    <div class="grid-item">Coming soon...</div>
-                   
-                   
+
+                <div class="project-card" data-aos="fade-right">
+                    <img src="./images/github.png" alt="">
+                    <div>
+                        <p>Description</p>
+                        <i></i>
+                    </div>
                 </div>
+
+                <div class="project-card" data-aos="fade-left">
+                    <img src="./images/github.png" alt="">
+                    <div>
+                        <p>Description</p>
+                        <i></i>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="project-grid">
+                    <div data-aos="fade-up" class="grid-item">Coming soon...</div>
+                    <div class="grid-item">Coming soon...</div>
+                    <div class="grid-item">Coming soon...</div>
+                    <div class="grid-item">Coming soon...</div>
+                    <div class="grid-item">Coming soon...</div>
+                    <div class="grid-item">Coming soon...</div>
+                   
+                   
+                </div> -->
 
 
             </section>
@@ -169,5 +190,12 @@
         
 
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration:1000
+      });
+    </script>
 </body>
 </html>
