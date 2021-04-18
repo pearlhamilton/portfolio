@@ -1,4 +1,3 @@
-function navSlide() {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav-link-container");
     const navLinks = document.querySelectorAll(".nav-link-container li");
@@ -16,6 +15,5 @@ function navSlide() {
         burger.classList.toggle("toggle");
     });
     
-}
 
-navSlide();
+
