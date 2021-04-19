@@ -78,6 +78,9 @@ section#home{
 
 /* nav bar */
 
+#logo img{
+    width: 80px;
+}
 
     
 nav {
@@ -87,10 +90,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
+    padding: 2rem;
+    margin-top: 1rem;
+    height: 10vh;
 
 }
 
+nav a {
+    font-size: 1.5rem;
+}
 
 .nav-link-container {
     display: flex;
@@ -123,13 +131,9 @@ nav {
 
 #logo{
     padding: 2rem 0;
-    font-family: futura-pt, sans-serif;
-    font-weight: 300;
-    font-size:1.5rem;
 }
  
-
-
+/* Home */
 
 h1{
     font-size: 8rem;
@@ -137,13 +141,16 @@ h1{
 }
 
 
-
-
 h2{
     text-align:center;
     padding-top: 4rem;
     font-size: 6rem;
 }
+
+#intro-line p{
+    font-size: 2rem;
+}
+
 
 #scrolldown{
     width:100%;
@@ -161,15 +168,14 @@ justify-content: flex-end;
 
 /* About me  */
 section#about{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 
-
-
 #about-me-img,#about-me-text {
+    font-size: 2rem;
     width: 50%;
     display: flex;
     align-items: center;
@@ -178,7 +184,7 @@ section#about{
 
 #about-me-img img{
     width: 60%;
-    border-radius: 50%;
+  
 }
 
 /* projects */
@@ -252,12 +258,15 @@ section#projects{
     align-items: center;
   }
 
-
-
+  h5{
+       font-size: 1.5rem;
+       text-align: center;
+    
+  }
 
   i{
     font-size: 5rem;
-color: #3A2E39;
+    color: #3A2E39;
 }
     
 .info {
@@ -267,26 +276,13 @@ color: #3A2E39;
       
   .icon:hover + .info {
     display: block;
-    font-size: 1rem;
-
-
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
   }
 
   
- 
-
-#intro-line{
-    margin-bottom: 0px;
-    
-    
-}
-    
-
-
-  
-
-
-/* animation */
+/* Animations */
 
 @keyframes pointer-bounce {
     from {
@@ -396,6 +392,13 @@ color: #3A2E39;
        
     
     }
+
+    #about-me-img img{
+        width: 90%;
+      
         
     
+    }
+      
+
 }
