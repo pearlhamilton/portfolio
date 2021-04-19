@@ -15,6 +15,13 @@
         burger.classList.toggle("toggle");
     });
     
+//scroll effect 
 
- 
-
+function scrollInto(id) {
+     const section = document.getElementById(id);
+     section.scrollIntoView({
+         behavior: "smooth", 
+         block: "start",
+         inline: "nearest"
+     });
+   }
