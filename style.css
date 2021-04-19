@@ -274,7 +274,7 @@ section#projects{
     font-size: 1rem;
   }
       
-  .icon:hover + .info {
+  i:hover + .info {
     display: block;
     font-size: 1.2rem;
     margin-top: 20px;
