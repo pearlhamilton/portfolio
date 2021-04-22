@@ -179,11 +179,36 @@ justify-content: flex-end;
 }
 
 /* About me  */
-section#about{
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
+#about-me{
+    display: grid;
+    grid-template-areas:
+      "one three "
+      "two three";
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,30vh);
+    
 }
+
+
+#about-me > h3{
+    background-color: aqua;
+    grid-area: one;
+}
+#about-me > p{
+ background-color: pink;
+ grid-area: two;
+
+}
+
+#about-me > img{
+    background-color: purple;
+    grid-area: three;
+    width:80%;
+    margin:auto;
+
+   }
+
 
 
 #about-me-img,#about-me-text {
