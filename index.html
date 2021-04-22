@@ -32,8 +32,9 @@
 
   <div id="sociallinks">
             <a href="https://github.com/pearlhamilton"><img src="./images/github.png" alt="github icon"></a>
-            <a><img src="./images/linkedin-logo.png" alt="github icon"></a>
-            <a><img src="./images/email.png" alt="github icon"></a>
+            <a href="https://www.linkedin.com/in/pearlhamilton/"><img src="./images/linkedin-logo.png" alt="Linkedin icon"></a>
+            <a href="pearlhamilton@hotmail.co.uk"><img src="./images/email.png" alt="email icon"></a>
+            <a id="cv">CV</a>
         </div>
       
 
@@ -61,11 +62,11 @@
 
 
 
-            <section id="about">
-                <h2>About Me</h2>
+            <section id="about" >
+                <h2 data-aos="fade-right">About Me</h2>
 
 
-                <div id="about-me">
+                <div data-aos="fade-right" id="about-me">
                     <h3>I love <span id="changingWord"></span>.</h3>
                     <p>  A little bit more about me ....<br> I am a curious, decicated and passionate indidicual with a fascination with learning new technology and languages. 
                         I have a solid understanding of full stack development, thanks to my training with Futureproof and enjoy building applications abd websites from scratch. 
@@ -142,14 +143,34 @@
                 <h2>Projects</h2>
         
                 <div class="project-card" data-aos="fade-right">
-                    <img src="https://i.stack.imgur.com/y9DpT.jpg" alt="">
-                    <p>Console.log</p>
+                    <img src="./images/consoul.log.png" alt="">
+                    <div class="project-info">
+                    <h4>Console.log</h4>
+                    <p>An anonymous blog for tech nerds to reveal their innermost feelings.
+                    </p>
+                    <p>HTML & CSS | Javascript | GIPHY API | Node.js | Express.js | Jest</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/pearlhamilton/all-about-the-journal"><i class="fas fa-code"></i></a>
+                        <a href="https://consoul-log.netlify.app/"><i class="far fa-window-maximize"></i></a>
+                    </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-left">
-                    <img src="https://i.stack.imgur.com/y9DpT.jpg" alt="">
-                    <p>Drink.Sleep.Code.Repeat</p>
                 </div>
+
+                
+                <div class="project-card" data-aos="fade-right">
+                    <img src="./images/drink.sleep.code.repeat.png" alt="">
+                    <div class="project-info">
+                    <h4>Drink() Sleep() Code() Repeat()</h4>
+                    <p>An habit tracking app for developers to track their drinking, coding and sleeping habits. Ensuring that developers have a healthy code life balance.
+                    </p>
+                    <p>HTML & CSS | Javascript | Node.js | Express.js | Jest & SuperTest| PostgresSql | Bycrpt</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/pearlhamilton/habit-tracker-server"><i class="fas fa-code"></i></a>
+                        <a href="https://drink-sleep-code-repeat.netlify.app/"><i class="far fa-window-maximize"></i></a>
+                    </div>
+                </div>
+            </div>
 
                 <div class="project-card" data-aos="fade-right">
                     <img src="https://i.stack.imgur.com/y9DpT.jpg" alt="">
@@ -167,7 +188,7 @@
     <script>
       AOS.init({
           duration:1000,
-          offset: 300
+          offset: 200
       });
     </script> 
 </body>

@@ -1,6 +1,4 @@
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Open+Sans:wght@300;800&display=swap');
 *{
     padding:0;
     margin: 0;
@@ -9,7 +7,9 @@
 
 }
 
-
+a:hover{
+    cursor: pointer;
+}
 
 
 
@@ -21,6 +21,7 @@ body{
 
     width: 100%; 
     overflow-x: hidden; 
+    font-family: 'Open Sans', sans-serif;;
 }
 
 ::-webkit-scrollbar {
@@ -42,6 +43,11 @@ align-items: center;
 border-radius: 10px 0px 0px 10px;
 
 
+}
+
+#cv{
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 
 #sociallinks img{
@@ -113,6 +119,7 @@ z-index: 1;
 
 .nav-item {
     margin-left: 5rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -149,6 +156,7 @@ a {
 h1{
     font-size: 8rem;
     margin-top: 1.2rem;    
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -156,10 +164,12 @@ h2{
     text-align:center;
     margin-top: 100px;
     font-size: 6rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #intro-line p{
     font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -198,12 +208,13 @@ justify-content: flex-end;
     padding-top: 2rem;
     grid-area: one;
     font-size: 2.6rem;
+    font-family: 'Montserrat', sans-serif;
  
 }
 
 #about-me > h3 > span {
     font-size: 2.6rem;
-
+    font-family: 'Montserrat', sans-serif;
     background-color:  #ebcdc7;;
 }
 #about-me > p{
@@ -230,6 +241,11 @@ text-align: justify;
 
 /* projects */
 
+h4{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
 section#projects{
     display: flex;
     flex-direction: column;
@@ -239,29 +255,42 @@ section#projects{
 }
 
 .project-card{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: grey;
-    width: 70%;
+    display:flex;
+    width: 80%;
     margin-bottom: 2rem;
     background-color:#b2edc5;
     word-wrap: break-word;
+    border-radius: 10px;
+
+
     
 }
 
 .project-card img{
-    width:100%;
+    width:50%;
     height: 300px;
 }
 
-.project-card > div{
-    width: 50%;    
-}
 
 
 .project-card:nth-child(even) img{
     order: 2;
 }
+
+.project-info{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.project-info i{
+    font-size: 2.8rem;
+    margin: 15px;
+}
+
 
  /* .project-grid{
     display:grid;
@@ -304,6 +333,7 @@ section#skills{
   h5{
        font-size: 1.5rem;
        text-align: center;
+       font-family: 'Montserrat', sans-serif;
     
   }
 
