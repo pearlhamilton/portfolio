@@ -177,10 +177,14 @@ h2{
     width:100%;
     display: flex;
 justify-content: flex-end;
+align-items: flex-end;
+
+height: 20vh;
 }
 
 #scrolldownimg{
-    width: 30px;
+    margin-bottom: 6git a0px;
+    height:20%;
     animation: pointer-bounce 0.5s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
@@ -518,5 +522,31 @@ font-size: 1.4rem;
      
     }
     
+
+}
+
+
+@media screen and (max-width:400px) {
+
+    *{font-size: 8px;
+    }
+
+#sociallinks{
+    position: fixed;
+    top:unset;
+    height: 5vh;
+
+    bottom:0 ;
+  
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+align-items: center;
+border-radius: unset;
+
+
+}
 
 }
