@@ -32,3 +32,32 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// changing word
+
+
+
+
+
+
+const word = document.getElementById('changingWord')
+
+let words = ["Travelling", "Cats", "Coffee", "Plants"];
+
+
+let count = 0
+
+function changeWord(){
+    console.log(count)
+
+    let currentWord = words[count]
+    word.innerHTML = currentWord
+
+    count ++ 
+
+    if (count == words.length) { count = 0; }
+}
+
+changeWord()
+
+setInterval(changeWord, 2000);

@@ -180,29 +180,43 @@ justify-content: flex-end;
 
 /* About me  */
 #about-me{
+    margin-top: 20px;
     display: grid;
     grid-template-areas:
       "one three "
+      "two three"
+      "two three"
       "two three";
-    gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2,30vh);
+    grid-template-rows: repeat(4, 1fr);
     
 }
 
 
 #about-me > h3{
-    background-color: aqua;
+    text-align: center;
+    padding-top: 50px;
     grid-area: one;
+    font-size: 3rem;
+ 
+}
+
+#about-me > h3 > span {
+    font-size: 3rem;
+
+    background-color:  #ebcdc7;;
 }
 #about-me > p{
- background-color: pink;
+
+text-align: center;
+line-height: 30px;
  grid-area: two;
+ 
 
 }
 
 #about-me > img{
-    background-color: purple;
+
     grid-area: three;
     width:80%;
     margin:auto;
