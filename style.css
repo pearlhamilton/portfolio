@@ -155,7 +155,7 @@ h1{
 
 h2{
     text-align:center;
-    padding-top: 4rem;
+    margin-top: 100px;
     font-size: 6rem;
 }
 
@@ -251,7 +251,9 @@ section#projects{
     border:#ebcdc7  solid 5px;
 } */
 
-
+section#skills{
+    height:auto;
+}
 
 #skill-cards{
     margin-top: 5rem;
@@ -262,8 +264,8 @@ section#projects{
 }
 
 .card {
-    height: 3rem;
-    margin: 3rem;
+    height:200px;
+    /* margin: 3rem; */
     display: flex;
     justify-content: center;
     flex-direction: column;
