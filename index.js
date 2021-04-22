@@ -42,7 +42,7 @@ function closeMenu() {
 
 const word = document.getElementById('changingWord')
 
-let words = ["Travelling", "Cats", "Coffee", "Plants"];
+let words = ["Coding","Travelling", "Cats", "Coffee", "Plants"];
 
 
 let count = 0
