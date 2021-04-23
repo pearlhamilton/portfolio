@@ -161,9 +161,9 @@ a {
  
 /* Home */
 
-h1{
-    font-size: 8rem;
-    margin-top: 1.2rem;    
+#intro > h1{
+    font-size: 7rem;
+    margin-top: 10rem;    
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -176,8 +176,15 @@ h2{
 }
 
 #intro-line p{
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
+    margin-left: 8px;
+}
+
+#intro-line span{
+    background-color: #c9b9b5; 
+    padding: 0 0.2em; 
+    font-size: 3rem;
 }
 
 
@@ -187,16 +194,18 @@ h2{
 justify-content: flex-end;
 align-items: flex-end;
 
-height: 20vh;
+/* height: 20vh; */
 }
 
 #scrolldownimg{
     margin-bottom: 6git a0px;
-    height:20%;
+    width:40px;
     animation: pointer-bounce 0.5s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
     animation-iteration-count: infinite;
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 /* About me  */
