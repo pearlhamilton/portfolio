@@ -265,19 +265,27 @@ section#projects{
     background-color:#b2edc5;
     word-wrap: break-word;
     border-radius: 10px;
+    height: 19rem;
 
 
     
 }
 
-.project-card img{
-    width:50%;
-    height: 300px;
+.project-img{
+     width:50%;
+     background-color: pink;
+     overflow-y: hidden;
+     display: flex;
+     align-items: center;
+
+}
+
+.project-img img{
+    width:100%;
 }
 
 
-
-.project-card:nth-child(even) img{
+.project-card:nth-child(even) .project-img{
     order: 2;
 }
 
