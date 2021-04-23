@@ -86,8 +86,17 @@ section#home{
 
 /* nav bar */
 
-#logo img{
-    width: 50px;
+#logo{
+ display: flex;
+ justify-content: center;
+align-items: center;    
+
+    
+}
+
+#logo > img{
+
+ width:100%;
 }
 
     
@@ -98,7 +107,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 11vh;
     background-color: #fef9f8;
 
     
