@@ -156,8 +156,7 @@ a {
 }
 
 #logo{
-    margin-left: 30px;
-    padding: 2rem 0;
+    margin-left: 20px;
 }
  
 /* Home */
@@ -565,5 +564,10 @@ border-radius: unset;
 
 
 }
+
+#logo > img{
+
+    width:75%;
+   }
 
 }
