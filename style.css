@@ -338,7 +338,7 @@ section#skills{
 }
 
 #skill-cards{
-    margin-top: 5rem;
+    margin-top: 0rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 3rem;
@@ -346,7 +346,7 @@ section#skills{
 }
 
 .card {
-    height:200px;
+    height:16rem;
     /* margin: 3rem; */
     display: flex;
     justify-content: center;
@@ -399,6 +399,17 @@ section#skills{
 *{
     font-size:14px;
 }
+
+#skill-cards{
+
+    margin: unset; 
+    grid-gap: unset;
+   
+
+}
+
+
+
 
 
     
@@ -478,6 +489,21 @@ section#skills{
     }
 
 
+    #skill-cards{
+        margin-top: 0rem;
+       
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                grid-gap: 0rem;
+
+
+    
+    }
+
+    .card {
+        height:11rem;
+        
+      }
+
 }
 
 
@@ -500,9 +526,14 @@ section#skills{
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 0rem;
         /* grid-gap: 3rem; */
        
     
+    }
+
+    .card{
+        margin: 3rem 0rem;
     }
 
    
@@ -573,5 +604,9 @@ border-radius: unset;
 
     width:75%;
    }
+
+
+   
+
 
 }
