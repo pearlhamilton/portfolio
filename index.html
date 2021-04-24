@@ -4,68 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pearl's Portfolio</title>
+    <link rel="icon" type="image/png" href="./images/favicon.jpg"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <script src="https://kit.fontawesome.com/68fd087352.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+
+
+    <div class="container">
         <nav>
-            <div class = "nav container">
-            <div id = "logo">Pearl Hamilton</div>
-            <ul class="navigation"> 
-                <li>Projects</li>
-                <li>Skills</li>
-                <li>Contact</li>
-            </ul>
+            <div id="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a onclick="scrollInto('home')" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a onclick="scrollInto('about')" class="nav-link">About</a></li>
+                    <li class="nav-item"><a onclick="scrollInto('skills')" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a onclick="scrollInto('projects')" class="nav-link">Projects</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
             </div>
         </nav>
-   
-    </header>
+
+        <div id="sociallinks">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fas fa-envelope"></i>
+            <a id="cv">CV</a>
+        </div>
 
 
-    <main>
-        
-        <section class='hero container'>
-            <div class="intro">
+
+        <section id="home">
+            <div id="intro">
                 <h1>Hello.<br>I am Pearl</h1>
             </div>
-
             <div id="intro-line">
-                <p>Trainee Full Stack Developer <br> at <span style="background-color: #c9b9b5; padding: 0 0.2em ">FutureProof</span></p>
-
+                <p>Full Stack Developer at <span>FutureProof</span></p>
             </div>
             <div id="scrolldown">
-               <p>scroll down</p>
-               <img src="https://img.icons8.com/android/24/000000/circled-down-2.png"/>
+                <i id="scrolldownimg" class="fas fa-arrow-circle-down"></i>
+            </div>
+        </section>
+
+
+
+        <section id="about" >
+            <h2 data-aos="fade-right">About Me</h2>
+            <div data-aos="fade-right" id="about-me">
+                <h3>I love <span id="changingWord"></span>.</h3>
+                <p>  A little bit more about me ....<br><br> I'm a curious, dedicated and passionate individual with a fascination for learning new technologies and languages. I have
+                        a solid foundation in full-stack development thanks to my training with Futureproof and enjoy building applications and websites from scratch.
+                        I have previous experience working in customer success and account management within SaaS startups, so I love to see websites and applications that truly advocate 
+                        for the end-user and provide a delightful user experience. Finally, thanks to my Modern Languages degree, I am a confident communicator and
+                        enjoy working with and learning from other people.</p>
+                <img src="./images/Pearl2.png" alt="image of Pearl">
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 data-aos="fade-right">Skills</h2>
+            <p>Hover on the icons for more info</p>
+
+            <div id="skill-cards">
+
+                <div class="card" data-aos="fade-right"> 
+                    <h5>HTML5 & CSS3 </h5>   
+                    <div id="html-css-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <p class="info">Responsive Design| Bootstrap</p>
+                </div>
+
+                <div class="card" data-aos="fade-right">
+                    <h5>Javascript</h5>          
+                    <i class="fab fa-js-square"></i>
+                    <p class="info">Javascript | Promises & Asynchronous Processes | OOP</p>
+                </div>
+
+                <div class="card" data-aos="fade-right" >
+                    <h5>Node.js</h5> 
+                    <i class="fab fa-node"></i>
+                    <p class="info"> Express.js | REST API</p>
+                </div>
+
+                <div class="card"data-aos="fade-right" >
+                    <h5>React</h5> 
+                    <i class="fab fa-react"></i>
+                    <p class="info"> JSX | Props & States | Redux </p>
+                </div>
+
+                <div class="card" data-aos="fade-right">
+                    <h5>Databases</h5> 
+                    <i class="fas fa-database"></i>
+                    <p class="info">Postgres | MongoDB </p>
+                </div>
+
+                <div class="card" data-aos="fade-right">
+                    <h5>Docker</h5> 
+                    <i class="fab fa-docker"></i>
+                    <p class="info"></p>
+                </div>
+
+                <div class="card"data-aos="fade-right">
+                    <h5>Python</h5> 
+                    <i class="fab fa-python"></i>
+                    <p class="info">Python</p>
+                </div>
+
+                <div class="card"data-aos="fade-right">
+                    <h5>Testing</h5> 
+                    <i class="fas fa-bug"></i>
+                    <p class="info">Jest | TDD </p>
+                </div> 
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-card" data-aos="fade-right">
+                <div class="project-img">
+                    <img src="./images/consoul-log.png" alt="consoul log project image">
+                </div>
+                <div class="project-info">
+                    <h4>Console.log</h4>
+                    <p>An anonymous blog for tech nerds to reveal their innermost feelings.</p>
+                    <p>HTML & CSS | Javascript | GIPHY API | Node.js | Express.js | Jest</p>
+                    <div class="project-buttons">
+                        <a href="./images/consoul.log.png"><i class="fas fa-code"></i></a>
+                        <a href="https://consoul-log.netlify.app/"><i class="far fa-window-maximize"></i></a>
+                    </div>
+                </div>
+
             </div>
 
-        </section>
 
+            <div class="project-card" data-aos="fade-left">
+                <div class="project-img">
+                    <img src="./images/drink-sleep-code-repeat.png" alt="drink sleep code repeat project image">
+                </div>
+                <div class="project-info">
+                    <h4>Drink() Sleep() Code() Repeat()</h4>
+                    <p>An habit tracking app for developers to track their drinking, coding and sleeping habits.</p>
+                    <p>HTML & CSS | Javascript | Node.js | Express.js | Jest & SuperTest| PostgresSql | Bycrpt</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/pearlhamilton/habit-tracker-server"><i class="fas fa-code"></i></a>
+                        <a href="https://drink-sleep-code-repeat.netlify.app/"><i class="far fa-window-maximize"></i></a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="project-card" data-aos="fade-right">
+                <div class="project-img">
+                    <img src="./images/Leaf.png" alt="leaf project image">
+                </div>
+                    <div class="project-info">
+                        <h4>Leaf</h4>
+                        <p>A plant e-commerce website</p>
+                        <p>React | Redux |Javascript| Node.js | Jest | Webpack</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/pearlhamilton/habit-tracker-server"><i class="fas fa-code"></i></a>
+                        <a href="https://leaf-ecommerce.netlify.app/"><i class="far fa-window-maximize"></i></a>
+                    </div>
+                </div>
+            </div>
 
-
-
-
-
-        <section id = "projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="grid-item">Coming soon...</div>
-                <div class="grid-item">Coming soon...</div>
-                <div class="grid-item">Coming soon...</div>
-                <div class="grid-item">Coming soon...</div>
-                <div class="grid-item">Coming soon...</div>
-                <div class="grid-item">Coming soon...</div>
-                <div class="grid-item">Coming soon...</div>
-                <div class="grid-item">Coming soon...</div>
-                <div class="grid-item">Coming soon...</div>
-
-        </section>
-
-     
-       
+            <p id="more-projects">Find more projects <a href="https://github.com/pearlhamilton">here</a></p>
+        </section>   
     </div>
-    </main>
-    <footer></footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration:1000,
+    offset: 140
+    });
+    </script> 
 </body>
 </html>
