@@ -35,10 +35,6 @@ function closeMenu() {
 // changing word
 
 
-
-
-
-
 const word = document.getElementById('changingWord')
 
 let words = ["Coding","Travelling", "Cats", "Coffee", "Plants"];
