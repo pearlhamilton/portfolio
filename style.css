@@ -90,12 +90,11 @@ section#home{
 .nav-item {
     display: inline-block;
     padding: 20px 10px;
-   
-}
-
-a.nav-link{
     font-size: 1.3rem;
     margin: 0 20px;
+
+
+   
 }
 
 
@@ -162,7 +161,6 @@ align-items: flex-end;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
     animation-iteration-count: infinite;
     margin-bottom: 70px;
-    margin-top: 70px;
 }
 
 /* ABOUT ME  */
@@ -407,9 +405,13 @@ i{
             display: block;
             background-color: var(--box-color);
             margin: 0;
+  
            
         }
-    
+
+     .nav-item a{
+        font-size: 2rem;
+     }
     
     
         .nav-menu{
@@ -488,19 +490,20 @@ i{
         
     }
 
-    #about-me > img{
+    #about-me img{
 
         width:170px;
         margin-bottom: 1rem;
         margin-bottom: 40px;
        }
 
-    #about-me > h3{
+    #about-me h3{
         padding-top: 0.5rem;
         }
 
-    #about-me > p{
-        font-size: 1.7rem;        
+    #about-me p{
+        font-size: 1.7rem;
+        height: auto;        
      }
 
     #sociallinks{
@@ -575,6 +578,12 @@ i{
 
         #sociallinks i, #cv{
             font-size: 3.5rem;
+        }
+        
+
+        #scrolldownimg{
+            margin-bottom: 100px;
+
         }
         
    
