@@ -3,7 +3,7 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+
 
 }
 
@@ -180,7 +180,6 @@ section#about{
       "two three";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); 
-    overflow-y: visible;
 }
 
 
