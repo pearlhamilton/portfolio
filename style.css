@@ -171,7 +171,6 @@ section#about{
 
 
 #about-me{
-    height:70vh;
     margin-top: 20px;
     display: grid;
     grid-template-areas:
@@ -226,9 +225,6 @@ section#skills{
 
 }
 
-#skills p{
-    font-size: 1.5rem;
-}
 
 .card {
     height:16rem;
@@ -246,6 +242,21 @@ section#skills{
     
   }
 
+  .info {
+    display: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+      
+  i:hover + .info, 
+  #html-css-icons:hover + .info {
+    display: block;
+  }
+
+  #hover{
+      text-align: center;
+  }
 
 
 /* PROJECTS */
@@ -332,27 +343,12 @@ section#projects{
     color: var(--font-color)
 }
 
-#skills p{
-    text-align: center;
-}
 
 i{
     font-size: 5rem;
     color: var(--font-color);
 }
     
-.info {
-    display: none;
-    font-size: 1rem;
-  }
-      
-  i:hover + .info, 
-  #html-css-icons:hover + .info {
-    display: block;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    text-align: center;
-  }
 
 
 
@@ -382,6 +378,16 @@ i{
         grid-gap: unset;
     }
     
+    .info {
+        display: block;
+       
+      }
+
+      #hover{
+        display: none;
+    }
+  
+          
 }
         
 
@@ -512,13 +518,13 @@ i{
     }
 
     .project-info p{
-        font-size: 15px; 
+        font-size: 1rem; 
 
 }
 
 
     .project-info h4{
-        font-size: 15px; 
+        font-size: 1rem; 
         margin: 10px;
 
     }
