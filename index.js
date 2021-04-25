@@ -1,5 +1,3 @@
-
-    
 //scroll effect 
 
 function scrollInto(id) {
@@ -14,24 +12,25 @@ function scrollInto(id) {
 
 //nav bar
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
 
-hamburger.addEventListener("click", mobileMenu);
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
+const toggleButton = document.getElementById('toggle')
+const navMenu = document.getElementById('nav-menu')
+const navLink = document.querySelectorAll(".nav-item")
 
-const navLink = document.querySelectorAll(".nav-link");
+
+toggleButton.addEventListener('click', ()=>{
+    navMenu.classList.toggle('active')
+})
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
-
 function closeMenu() {
-    hamburger.classList.remove("active");
+   
     navMenu.classList.remove("active");
 }
+
+
+
 
 // changing word
 
