@@ -168,8 +168,6 @@ align-items: flex-end;
 
 section#about{
     height:auto;
-    overflow-x: visible;
-    overflow-y: visible;
 }
 
 
@@ -493,7 +491,6 @@ div.project-info p, div.project-info h4{
     }
 
     #about-me{
-        height:80vh;
         grid-template-areas:
           "one one "
           "three three"
