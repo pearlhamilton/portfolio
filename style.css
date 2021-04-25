@@ -22,7 +22,6 @@ body{
     background-color: var(--main-color);
     color: var(--font-color);
     width: 100%; 
-    overflow-x: hidden; 
     font-family: 'Open Sans', sans-serif;;
 }
 
@@ -203,6 +202,7 @@ section#about{
 text-align: justify;
  grid-area: two;
  font-size: 1.2rem;
+ overflow-x: visible ;
 
 }
 
