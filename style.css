@@ -178,9 +178,10 @@ section#about{
       "one three "
       "two three"
       "two three"
+      "two three"
       "two three";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr); 
+    grid-template-rows: repeat(5, 1fr); 
 }
 
 
@@ -202,7 +203,6 @@ section#about{
 text-align: justify;
  grid-area: two;
  font-size: 1.2rem;
- overflow-x: visible ;
 
 }
 
