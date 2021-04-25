@@ -43,7 +43,6 @@ let words = ["Coding","Travelling", "Cats", "Coffee", "Plants"];
 let count = 0
 
 function changeWord(){
-    console.log(count)
 
     let currentWord = words[count]
     word.innerHTML = currentWord
@@ -56,3 +55,20 @@ function changeWord(){
 changeWord()
 
 setInterval(changeWord, 2000);
+
+// skill cards
+
+const skillSection = document.getElementById("skill-cards")
+
+skillSection.addEventListener('click', doSomething)
+
+
+
+
+    function doSomething(e) {
+        if (e.target !== e.currentTarget) {
+            var clickedItem = e.target;
+            console.log(clickedItem)
+        }
+        e.stopPropagation();
+    }
