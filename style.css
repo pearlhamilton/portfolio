@@ -228,7 +228,7 @@ section#skills{
 
 
 .card {
-    height:16rem;
+    height:14rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -486,9 +486,7 @@ div.project-info p, div.project-info h4{
     
     }
 
-    .card{
-        margin: 3rem 0rem;
-    }
+
 
     #about-me{
         grid-template-areas:
@@ -557,6 +555,14 @@ div.project-info p, div.project-info h4{
         background-color: inherit;
     }
 
+    p.info{
+        font-size: 1.3rem;
+
+    }
+
+    .card {
+        height:17rem;
+    }
 
 }
 
