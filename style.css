@@ -78,74 +78,84 @@ section#home{
 
 /* NAV BAR */
 
-#logo{
+.navbar{
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 1rem 0;       
-}
-
-#logo > img{
- width:100%;
-}
-
-    
-nav {
+    justify-content: space-between;
+    height:10vh;
+    align-items: center;
     position: fixed;
-    top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 11vh;
-    background-color: var(--main-color);
-    z-index: 1;
-}
-
-.nav-link{
-    font-size: 1.4rem;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 30px;
- 
+    z-index: 2;
 }
 
 .nav-item {
-    margin-left: 5rem;
-    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 20px 10px;
+   
 }
 
-
-li {
-    list-style: none;
+a.nav-link{
+    font-size: 2rem;
 }
 
-a {
-    color: var(--font-color);
-    text-decoration: none;
-  
-}
-.hamburger {
-    display: none;
-}
 
 .bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
     background-color: var(--font-color);
 }
 
-#logo{
-    margin-left: 20px;
+.menu{
+    display:none;
 }
+
+#logo{
+ 
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@media  screen and (max-width: 768px) {
+    .menu{
+        display:block;
+        position: absolute;
+        right: 15px;
+        top:15px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        background-color: var(--main-color);
+        
+    }
+
+    .nav-item {
+        display: block;   
+    }
+
+    .nav-menu{
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    
+    #logo{
+        width: 100%;
+    }
+
+    div#logo img{
+        width: 40px;
+        
+    }
+
+    .active{
+        display:block;
+    }
+}
+
  
 /* HOME */
 
@@ -401,48 +411,48 @@ i{
 
 @media only screen and (max-width: 768px) {
 
-    nav{
-        position: fixed;
-    }
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 9rem;
-        flex-direction: column;
-        background-color: var(--box-color);
-        width: 100%;
-        border-radius: 0px 0px 10px 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
+  
+        .menu{
+            display:block;
+            position: absolute;
+            right: 15px;
+            top:15px;
+        }
+    
+        .navbar{
+            flex-direction: column;
+            height: auto;
+            
+        }
+    
     .nav-item {
-        margin: 2.5rem 0;
-    } 
- 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        margin-right: 30px;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+            display: block;
+            background-color: var(--box-color);
+            margin: 0;
+           
+        }
+    
+    
+    
+        .nav-menu{
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
+        
+        #logo{
+            width: 100%;
+        }
+    
+        div#logo img{
+            width: 40px;
+            
+        }
+    
+        .active{
+            display:block;
+        }
+    
 
     #about-me{
         grid-template-areas:
