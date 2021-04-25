@@ -171,7 +171,6 @@ section#about{
 
 
 #about-me{
-    /* height:70vh; */
     margin-top: 20px;
     display: grid;
     grid-template-areas:
