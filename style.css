@@ -168,6 +168,8 @@ align-items: flex-end;
 
 section#about{
     height:auto;
+    overflow-x: visible;
+    overflow-y: visible;
 }
 
 
@@ -178,10 +180,9 @@ section#about{
       "one three "
       "two three"
       "two three"
-      "two three"
       "two three";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
 }
 
 
