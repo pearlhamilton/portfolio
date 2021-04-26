@@ -49,12 +49,6 @@ body{
     font-size: 2.5rem;
 }
 
-#cv{
-    font-weight: 800;
-    font-size: 1.6rem;
-}
-
-
 
 .container {
     scroll-behavior: smooth;
@@ -93,8 +87,6 @@ section#home{
     padding: 20px 10px;
     font-size: 1.3rem;
     margin: 0 20px;
-
-
    
 }
 
@@ -226,7 +218,6 @@ section#skills{
 
 }
 
-
 .card {
     height:14rem;
     display: flex;
@@ -330,9 +321,6 @@ section#projects{
 }
 
 
-
-
-
  #more-projects{
      font-size: 1.5rem;
  }
@@ -395,51 +383,51 @@ i{
 @media only screen and (max-width: 768px) {
 
    
-  
-        .menu{
-            display:block;
-            position: absolute;
-            right: 15px;
-            top:15px;
-        }
-    
-        .navbar{
-            flex-direction: column;
-            height: auto;
-            
-        }
-    
+
+    .menu{
+        display:block;
+        position: absolute;
+        right: 15px;
+        top:15px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        
+    }
+
     .nav-item {
-            display: block;
-            background-color: var(--box-color);
-            margin: 0;
-  
-           
-        }
+        display: block;
+        background-color: var(--box-color);
+        margin: 0;
+
+        
+    }
 
      .nav-item a{
         font-size: 2rem;
      }
     
     
-        .nav-menu{
-            width: 100%;
-            text-align: center;
-            display: none;
-        }
+    .nav-menu{
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    
+    #logo{
+        width: 100%;
+    }
+
+    div#logo img{
+        width: 60px;
         
-        #logo{
-            width: 100%;
-        }
-    
-        div#logo img{
-            width: 60px;
-            
-        }
-    
-        .active{
-            display:block;
-        }
+    }
+
+    .active{
+        display:block;
+    }
     
 
     #about-me{
@@ -466,9 +454,9 @@ i{
         height:11rem;  
       }
 
-div.project-info p, div.project-info h4{
-    font-size: 1.8rem;
-}
+    div.project-info p, div.project-info h4{
+        font-size: 1.8rem;
+    }
 
     }
 
